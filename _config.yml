@@ -1,0 +1,44 @@
+###########
+# site.title, site.url, site.author.name
+
+title:   'Living Hype, Ltd.'
+description: 'We help brands and indie-authors focus on their passions.'
+author:
+  name:  'Joshua F. Rountree'
+twitter:
+  username: livingthehype
+  card: summary
+## note: 
+#  use site.path in your templates to make it work for both protocols e.g. http and https
+#  use site.url only inside the web feed template (e.g. requires full url incl. protocol)
+path: /
+url:  'https://livinghype.com/'
+
+logo: /assets/images/logo-horizontal.png
+########
+# more settings
+social:
+  name: Living Hype, Ltd.
+  links:
+    - https://twitter.com/livingthehype
+    - https://www.facebook.com/livingthehype
+markdown: kramdown
+
+sass:
+  sass_dir: assets/stylesheets
+  style:    expanded
+
+permalink: /:title.html
+
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+
+
+safe: true
+lsi: false

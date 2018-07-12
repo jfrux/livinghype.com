@@ -1,0 +1,14 @@
+{
+  "name": "openpilot-community.github.io",
+  "version": "0.0.1",
+  "description": "website for openpilot community",
+  "main": "index.js",
+  "scripts": {
+    "build": "bundle exec jekyll build",
+    "start": "bundle exec jekyll serve"
+  },
+  "repository": "git@github.com:openpilot-community/openpilot-community.github.io.git",
+  "author": "Joshua F. Rountree <joshua.rountree@scripps.com>",
+  "license": "MIT",
+  "private": true
+}

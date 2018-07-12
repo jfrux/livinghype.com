@@ -1,0 +1,107 @@
+---
+---
+
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/root";
+@import "bootstrap/reboot";
+@import "bootstrap/type";
+@import "bootstrap/images";
+@import "bootstrap/code";
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+@import "bootstrap/transitions";
+@import "bootstrap/dropdown";
+@import "bootstrap/button-group";
+@import "bootstrap/input-group";
+@import "bootstrap/custom-forms";
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+@import "bootstrap/card";
+@import "bootstrap/breadcrumb";
+@import "bootstrap/pagination";
+@import "bootstrap/badge";
+@import "bootstrap/jumbotron";
+@import "bootstrap/alert";
+@import "bootstrap/progress";
+@import "bootstrap/media";
+@import "bootstrap/list-group";
+@import "bootstrap/close";
+@import "bootstrap/modal";
+@import "bootstrap/tooltip";
+@import "bootstrap/popover";
+@import "bootstrap/carousel";
+@import "bootstrap/utilities";
+@import "bootstrap/print";
+
+body {
+  color:#FFF;
+  background-color:#000;
+  
+}
+
+// .nav {
+// background-color: #212121;
+// }
+.navbar {
+  padding: 0.7rem 1rem;
+  background-color:#000;
+  &.bg-dark {
+    background-color:rgba(#343a40,0.5)!important;
+  }
+}
+
+.logo {
+  margin: 0 auto;
+  height:50px;
+  background-image: url('/assets/images/inline-logo.png');
+  width: 375px;
+  background-repeat: no-repeat;
+  background-position:center center;
+  background-size: 100% auto;
+}
+.logo-wrap {
+  text-align:center;
+  img {
+    width:100%;
+    max-width:335px;
+    margin:0 auto;
+  }
+}
+.nav {
+  margin-bottom:30px;
+  border-bottom: 1px solid #222;
+  .nav-item {
+    position:relative;
+    &:after { 
+      content: "";
+      background-color:#222;
+      width:1px;
+      height:100%;
+      position:absolute;
+      right:0;
+      top:0;
+    }
+
+    &:last-child {
+      &:after {
+        display:none;
+      }
+    }
+
+    .nav-link {
+      // padding-left: 35px;
+      // padding-right: 35px;
+    }
+  }
+}
+h1 {
+  display:none;
+}
+
+h1,h2,h3,h4,h5 {
+  font-weight:$font-weight-light;
+}
